@@ -4,13 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>youngmin's Portfolio</title>
+    <title>serenedev.k</title>
     <meta name="description" content="Portfolio for youngmin" />
     <meta name="author" content="youngmin" />
 
 
 
-    <link rel="icon" type="image/png" href="Images/icon.png?v=2" />
+    <link rel="icon" type="image/png" href="Images/Seren-favicon-square.png" />
     <script
       src="https://kit.fontawesome.com/3547a5d8ff.js"
       crossorigin="anonymous"
@@ -26,10 +26,10 @@
     <!-- NavBar -->
     <nav id="navbar">
       <div class="navbar__logo">
-        <a href="#"><img src="Images/icon2.png" /></a>
+        <a href="#"><img src="Images/Seren-banner-189x125.png" alt="serenedev.k" width="189" height="125" /></a>
       </div>
       <ul class="navbar__menu">
-        <li class="navbar__menu__icon active" data-link="#home">"Home"</li>
+        <li class="navbar__menu__icon active" data-link="#home">Home</li>
         <li class="navbar__menu__icon" data-link="#about">About</li>
         <li class="navbar__menu__icon"data-link="#skills">Skills</li>
         <li class="navbar__menu__icon" data-link="#work">Work</li>
@@ -48,15 +48,16 @@
     <section id="home">
       <div class="home__container">
       <img
-        src="Images/soli.png"
-        alt="youngmin's profile photo"
+        src="Images/Seren1.png?v=4"
+        alt="serenedev.k profile photo"
         class="hoem__avatar"
+        id="avatar"
       />
       <h1 class="home__title">
-        Welcome,<br />This is youngmin's personal website
+        serenedev.k
       </h1>
       <h2 class="home__description">
-        A Cosmetic Product Developoer with Strong Design Background
+        Full-Stack & Mobile Developer crafting smooth code with a serene, relaxed vibe.
       </h2>
       <button class="home__button" >Contact Me</button>
       </div>
@@ -67,10 +68,9 @@
       <h1>About Me</h1>
       <!--페이지에 공통으로 쓰이는 것은 따로 클래스 지정 할 필요는 없음-->
       <p>
-        Experience with all phases of the product development. Passion for
-          learning new technologies. Capable of working within a team environment
-          and independently. Ability to plan and time schedule, work under strict
-          time pressure and adapt quickly when needed.
+        Full-Stack & Mobile Developer craftin' smooth Web/App code.
+        Passionate about chill vibes, clean architectures, and deliverin'
+        stress-free digital experiences.
       </p>
       <div class="about__major">
         <div class="major">
@@ -82,33 +82,17 @@
         </div>
         <div class="major">
           <div class="major__icon">
-            <i class="fas fa-palette"></i>
+            <i class="fas fa-server"></i>
           </div>
-          <div class="major__title">Adobe</div>
-          <div class="major__description">Photoshop. Illustrator. Indesign</div>
+          <div class="major__title">Back-end</div>
+          <div class="major__description">Java 17. MySQL. Redis. Kafka. AWS</div>
         </div>
         <div class="major">
           <div class="major__icon">
-            <i class="fas fa-file-word"></i>
+            <i class="fas fa-mobile-alt"></i>
           </div>
-          <div class="major__title">Microsoft</div>
-          <div class="major__description">Word. Excel. Powerpoint</div>
-        </div>
-      </div>
-      <div class="about__jobs">
-        <div class="job">
-          <img src="Images/ABS logo.png" alt="company logo" class="job__logo" />
-          <p class="job__name">Product Developer</p>
-          <p class="job__period">January 2020 -</p>
-        </div>
-        <div class="job">
-          <img
-            src="Images/Dear logo.png"
-            alt="company logo"
-            class="job__logo"
-          />
-          <p class="job__name">Product Developer</p>
-          <p class="job__period">March 2019 - December 2020</p>
+          <div class="major__title">App</div>
+          <div class="major__description">Cross-Platform (Flutter)<br />iOS Native (Swift)<br />Android Native (Kotlin)</div>
         </div>
       </div>
     </section>
@@ -155,69 +139,63 @@
         <h1>Skills</h1>
         <h2>Skills & Attributes</h2>
         <p>
-          Experience with all phases of the product development. Passion for
-          learning new technologies. Capable of working within a team environment
-          and independently. Ability to plan and time schedule, work under strict
-          time pressure and adapt quickly when needed.
+          Serene full-stack & mobile expert craftin' smooth Web/App code.
+          Blending robust technical skills with a relaxed mindset to deliver
+          clean, scalable solutions and stress-free user experiences with calm expertise.
         </p>
         <div class="skillset">
           <div class="skillset__left">
             <h3 class="skillset__title">Skills</h3>
             <div class="skill">
               <div class="skill__description">
-                <span>Product Development Skill</span>
-                <span>90%</span>
+                <span>Java 17, Spring Boot</span>
               </div>
-              <div class="skill__bar">
-                <div class="skill__value" style="width: 90%;"></div>
-              </div>
-            </div>
-            <div class="skill">
-              <div class="skill__description">
-                <span>Project Management Skill</span>
-                <span>90%</span>
-              </div>
-              <div class="skill__bar">
-                <div class="skill__value" style="width: 90%;"></div>
+              <div class="skill__bar skill__bar--slide">
+                <div class="skill__value skill__value--slide"></div>
               </div>
             </div>
             <div class="skill">
               <div class="skill__description">
-                <span>Excel, Word, Powerpoint</span>
-                <span>80%</span>
+                <span>MySQL, Redis</span>
               </div>
-              <div class="skill__bar">
-                <div class="skill__value" style="width: 80%;"></div>
-              </div>
-            </div>
-            <div class="skill">
-              <div class="skill__description">
-                <span>Illustrator, Photoshop</span>
-                <span>90%</span>
-              </div>
-              <div class="skill__bar">
-                <div class="skill__value" style="width: 90%;"></div>
+              <div class="skill__bar skill__bar--slide">
+                <div class="skill__value skill__value--slide"></div>
               </div>
             </div>
             <div class="skill">
               <div class="skill__description">
-                <span>HTML, CSS, JS</span>
-                <span>60%</span>
+                <span>Kafka, AWS</span>
               </div>
-              <div class="skill__bar"></div>
-                <div class="skill__value" style="width: 60%;"></div>
+              <div class="skill__bar skill__bar--slide">
+                <div class="skill__value skill__value--slide"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill__description">
+                <span>Flutter (Cross-Platform)</span>
+              </div>
+              <div class="skill__bar skill__bar--slide">
+                <div class="skill__value skill__value--slide"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill__description">
+                <span>Swift, Kotlin (Native)</span>
+              </div>
+              <div class="skill__bar skill__bar--slide">
+                <div class="skill__value skill__value--slide"></div>
               </div>
             </div>
           </div>
           <div class="skillset__right">
-            <div class="tools">
+            <div class="tools tools--fade">
               <h3 class="skillset__title">Tools</h3>
               <ul class="tools__list">
-                <li>1. Visual Studio Code</li>
-                <li>2. Hand Drawing</li>
-                <li>3. Watercolor Painting</li>
-                <li>4. Marbling (EBRU)</li>
-                <li>5. Screen Printing</li>
+                <li>1. IntelliJ IDEA</li>
+                <li>2. Docker</li>
+                <li>3. AWS Console</li>
+                <li>4. Postman</li>
+                <li>5. Android Studio</li>
               </ul>
             </div>
           </div>
@@ -238,64 +216,61 @@
       <button class="work__btn" data-filter='Front-end'>
         Front-end<span class="category__counts" >2</span>
       </button>
-      <button class="work__btn" data-filter='Adobe'>
-        Adobe<span class="category__counts" '>3</span>
+      <button class="work__btn" data-filter='Back-end'>
+        Back-end<span class="category__counts" '>3</span>
       </button>
-      <button class="work__btn" data-filter='Microsoft'>
-        Microsoft<span class="category__counts">1</span>
+      <button class="work__btn" data-filter='App'>
+        App<span class="category__counts">1</span>
       </button>
     </div>
 
     <div class="work__projects">
       <a href="#" class="project" target="blank" data-type='Front-end'>
-        <img src="Images/youtube.jpeg" class = "project__img"alt="Youtube"/>
+        <img src="Images/Frontend1.jpg" class = "project__img"alt="Youtube"/>
         <div class="project__description">
           <h3>Youtube Site</h3>
           <span>Clone codiding with HTML and CSS</span>
         </div>
       </a>
       <a href="#" class="project" target="blank" data-type='Front-end'>
-        <img src="Images/Webpage.jpeg" class = "project__img"alt="Webpage"/>
+        <img src="Images/Frontend2.jpg" class = "project__img"alt="Webpage"/>
         <div class="project__description">
           <h3>Personal Site</h3>
           <span>Building up personal webpage</span>
         </div>
       </a>
-      <a href="#" class="project"  target="blank" data-type='Adobe'>
-        <img src="Images/Adobe.jpg" alt="Adobe" class = "project__img"/>
+      <a href="#" class="project"  target="blank" data-type='Back-end'>
+        <img src="Images/Backend1.jpg" alt="Back-end" class = "project__img"/>
         <div class="project__description">
-          <h3>Adobe Print Project</h3>
+          <h3>Order Service API</h3>
           <span
-            >Creating Patterns <br \ />Visualizing the products with
-            images</span
+            >Java 17 & Spring Boot REST API <br \ />with MySQL and Redis caching</span
           >
         </div>
       </a>
-            <a href="#" class="project"  target="blank" data-type='Adobe'>
-        <img src="Images/Pattern.png" alt="Adobe" class = "project__img"/>
+            <a href="#" class="project"  target="blank" data-type='Back-end'>
+        <img src="Images/Backend2.jpg" alt="Back-end" class = "project__img"/>
         <div class="project__description">
-          <h3>Adobe Print Project</h3>
+          <h3>Real-time Event Pipeline</h3>
           <span
-            >Creating Patterns <br \ />Visualizing the products with
-            images</span
+            >Kafka-based event streaming <br \ />for real-time data processing</span
           >
         </div>
       </a>
-            <a href="#" class="project"  target="blank" data-type='Adobe'>
-        <img src="Images/Adobe collection.png" alt="Adobe" class = "project__img"/>
+            <a href="#" class="project"  target="blank" data-type='Back-end'>
+        <img src="Images/Backend3.jpg" alt="Back-end" class = "project__img"/>
         <div class="project__description">
-          <h3>Adobe Print Project</h3>
+          <h3>Cloud Infrastructure</h3>
           <span
-            >Creating Patterns <br \ />Visualizing the products with
-            images</span
+            >AWS-based deployment <br \ />and infrastructure automation</span
           >
         </div>
       </a>
-      <a href="#" class="project"  target="blank" data-type='Microsoft'>
-        <img src="Images/Microsoft.jpeg" alt="Youtube" class = "project__img"/>
+      <a href="#" class="project"  target="blank" data-type='App'>
+        <img src="Images/App1.jpg" alt="App" class = "project__img"/>
         <div class="project__description">
-          <h3>Presentation</h3>
-          <span>Creating unique and informative presentation</span>
+          <h3>Cross-Platform Mobile App</h3>
+          <span>Flutter app with iOS/Android native modules</span>
         </div>
       </a>
     </div>
@@ -347,7 +322,7 @@
     <!-- contacts -->
     <section id="contact">
       <h1 class ="contact__title">Let's Talk</h1>
-      <h3 class ="contact__email">adjutageaju@naver.com</h3>
+      <h3 class ="contact__email">serenedev.k@google.com</h3>
       <div class="contact__icon">
       <a href="#" target ="blank" class="fab fa-linkedin"></a>
       <a href="#" target ="blank" class="fab fa-github"></a>

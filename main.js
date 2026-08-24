@@ -90,6 +90,17 @@ workBtnContainer.addEventListener("click", e => {
   }, 300);
 });
 
+// Easter egg: tap avatar 7 times to reveal the original profile photo
+const avatar = document.querySelector("#avatar");
+let avatarTapCount = 0;
+avatar.addEventListener("click", () => {
+  avatarTapCount++;
+  if (avatarTapCount === 7) {
+    avatar.src = "Images/soli.png";
+    avatar.alt = "youngmin's profile photo";
+  }
+});
+
 function scrollIntoView(selector) {
   const scrollTo = document.querySelector(selector);
   scrollTo.scrollIntoView({
