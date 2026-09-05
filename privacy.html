@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Glory Bible Privacy Policy</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Newsreader:ital,wght@0,400;0,500;1,400&family=IBM+Plex+Mono:wght@400;600&display=swap">
+<style>
+  :root {
+    --bg: #f3f4ef;
+    --surface: #ffffff;
+    --ink: #1b2430;
+    --muted: #5b6472;
+    --accent: #2b4c7e;
+    --accent-soft: #e4eaf3;
+    --rule: #dadcd4;
+    --mono-tint: #eef0ea;
+    --font-display: "Fraunces", "Iowan Old Style", "Palatino Linotype", serif;
+    --font-body: "Newsreader", "Palatino Linotype", Georgia, serif;
+    --font-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #12161b;
+      --surface: #1a1f26;
+      --ink: #e8e9e3;
+      --muted: #9aa3ae;
+      --accent: #86a9d6;
+      --accent-soft: #202b3a;
+      --rule: #2b313a;
+      --mono-tint: #1f242b;
+    }
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+  }
+
+  body {
+    font-family: var(--font-body);
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 4rem 1.5rem 6rem;
+  }
+
+  header.top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .mark-row {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .mark {
+    width: 34px;
+    height: 34px;
+    flex-shrink: 0;
+    color: var(--accent);
+  }
+
+  .wordmark {
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  .wordmark strong {
+    color: var(--ink);
+    font-weight: 600;
+  }
+
+  .lang-toggle {
+    display: inline-flex;
+    border: 1px solid var(--rule);
+    border-radius: 999px;
+    padding: 3px;
+    background: var(--surface);
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.04em;
+  }
+
+  .lang-toggle button {
+    appearance: none;
+    border: none;
+    background: transparent;
+    color: var(--muted);
+    padding: 0.35rem 0.75rem;
+    border-radius: 999px;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: inherit;
+    letter-spacing: inherit;
+  }
+
+  .lang-toggle button:focus-visible,
+  a:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+
+  .lang-toggle button[aria-pressed="true"] {
+    background: var(--accent);
+    color: var(--surface);
+  }
+
+  h1 {
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: clamp(2rem, 4.5vw, 2.7rem);
+    line-height: 1.15;
+    margin: 0 0 0.5rem;
+    text-wrap: balance;
+  }
+
+  .subtitle {
+    color: var(--muted);
+    font-size: 1.05rem;
+    max-width: 46ch;
+  }
+
+  .meta-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem 1.5rem;
+    margin-top: 1.5rem;
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    color: var(--muted);
+  }
+
+  .meta-row dt { display: inline; font-weight: 600; color: var(--ink); }
+  .meta-row .pair { display: flex; gap: 0.4em; margin: 0; }
+  .meta-row dd { margin: 0; }
+
+  .summary-box {
+    background: var(--accent-soft);
+    border: 1px solid var(--rule);
+    border-radius: 10px;
+    padding: 1.25rem 1.4rem;
+    margin: 2.25rem 0 3rem;
+  }
+
+  .summary-box p {
+    margin: 0;
+    font-size: 1.02rem;
+  }
+
+  .summary-box .eyebrow {
+    display: block;
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 0.5rem;
+  }
+
+  section.clause {
+    display: grid;
+    grid-template-columns: 3.2rem 1fr;
+    gap: 0 1.25rem;
+    padding: 1.9rem 0;
+    border-top: 1px solid var(--rule);
+  }
+
+  section.clause:last-of-type {
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .clause-num {
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    color: var(--muted);
+    padding-top: 0.3rem;
+  }
+
+  .clause h2 {
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: 1.28rem;
+    margin: 0 0 0.6rem;
+    text-wrap: balance;
+  }
+
+  .clause p, .clause li {
+    max-width: 62ch;
+    font-size: 1rem;
+    color: var(--ink);
+  }
+
+  .clause ul {
+    margin: 0.6rem 0 0;
+    padding-left: 1.15rem;
+  }
+
+  .clause li + li { margin-top: 0.35rem; }
+
+  .clause a { color: var(--accent); }
+
+  footer.foot {
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--rule);
+    font-family: var(--font-mono);
+    font-size: 0.76rem;
+    color: var(--muted);
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  [hidden] { display: none !important; }
+
+  @media (max-width: 520px) {
+    section.clause { grid-template-columns: 1fr; }
+    .clause-num { padding-top: 0; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="top">
+    <div class="mark-row">
+      <svg class="mark" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M20 8C16 6 10 6 6 8V30C10 28 16 28 20 30" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M20 8C24 6 30 6 34 8V30C30 28 24 28 20 30" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M20 8V30" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+      </svg>
+      <div class="wordmark"><strong>Glory Bible</strong> &middot; Privacy</div>
+    </div>
+    <div class="lang-toggle" role="group" aria-label="Language">
+      <button type="button" id="btn-en" aria-pressed="true">EN</button>
+      <button type="button" id="btn-ko" aria-pressed="false">KO</button>
+    </div>
+  </header>
+
+  <!-- ENGLISH -->
+  <div id="lang-en">
+    <h1>Privacy Policy</h1>
+    <p class="subtitle">How Glory Bible handles (and mostly doesn't handle) your information.</p>
+
+    <dl class="meta-row">
+      <div class="pair"><dt>App</dt><dd>Glory Bible</dd></div>
+      <div class="pair"><dt>Developer</dt><dd>Youngmin Kang</dd></div>
+      <div class="pair"><dt>Effective</dt><dd>September 6, 2026</dd></div>
+    </dl>
+
+    <div class="summary-box">
+      <span class="eyebrow">Plain-language summary</span>
+      <p>Glory Bible collects nothing. It has no account, no analytics, no ads, and no network connection at all &mdash; every verse and every setting lives only on your device.</p>
+    </div>
+
+    <section class="clause">
+      <div class="clause-num">01</div>
+      <div>
+        <h2>Data we do not collect</h2>
+        <p>Glory Bible does not collect, transmit, or share any personal data, usage data, or device identifiers. There is no sign-in, no analytics SDK, no advertising SDK, and no server the app talks to &mdash; the app has no network access at all.</p>
+      </div>
+    </section>
+
+    <section class="clause">
+      <div class="clause-num">02</div>
+      <div>
+        <h2>What stays on your device</h2>
+        <p>A small amount of state is saved locally, using standard iOS/Android app storage, so the app can remember what you left it doing:</p>
+        <ul>
+          <li>Your last-read book, chapter, and verse</li>
+          <li>Your selected languages and default translation</li>
+          <li>Theme, font size, and font choice</li>
+          <li>Bookmarked verses</li>
+        </ul>
+        <p>None of this ever leaves your device, and we never receive a copy of it.</p>
+      </div>
+    </section>
+
+    <section class="clause">
+      <div class="clause-num">03</div>
+      <div>
+        <h2>Bible text &amp; licensing</h2>
+        <p>The translations bundled with the app are either public domain or, for the ten "Open Translation Bible" editions, licensed CC BY-SA 4.0. Full source attribution for every translation is listed in the app's Settings screen. No third party receives your data through this content &mdash; it is bundled at install time and read entirely offline.</p>
+      </div>
+    </section>
+
+    <section class="clause">
+      <div class="clause-num">04</div>
+      <div>
+        <h2>Children's privacy</h2>
+        <p>Because the app collects no data from anyone, it is safe for users of any age, including children.</p>
+      </div>
+    </section>
+
+    <section class="clause">
+      <div class="clause-num">05</div>
+      <div>
+        <h2>Deleting your data</h2>
+        <p>All app data lives only on your device. Uninstalling Glory Bible &mdash; or clearing its data in your device settings &mdash; permanently deletes it immediately. There is nothing stored on our side to request or delete, because nothing is ever sent to us.</p>
+      </div>
+    </section>
+
+    <section class="clause">
+      <div class="clause-num">06</div>
+      <div>
+        <h2>Changes to this policy</h2>
+        <p>If this policy changes, the effective date above will be updated and the new version posted at this same address. Continued use of the app after a change constitutes acceptance of the update.</p>
+      </div>
+    </section>
+
+    <section class="clause">
+      <div class="clause-num">07</div>
+      <div>
+        <h2>Contact</h2>
+        <p>Questions about this policy can be sent to <a href="mailto:serenedevk@gmail.com">serenedevk@gmail.com</a>.</p>
+      </div>
+    </section>
+  </div>
+
+  <!-- KOREAN -->
+  <div id="lang-ko" hidden>
+    <h1>개인정보 처리방침</h1>
+    <p class="subtitle">글로리 바이블이 사용자 정보를 다루는(사실상 다루지 않는) 방식입니다.</p>
+
+    <dl class="meta-row">
+      <div class="pair"><dt>앱</dt><dd>글로리 바이블 (Glory Bible)</dd></div>
+      <div class="pair"><dt>개발자</dt><dd>강영민 (Youngmin Kang)</dd></div>
+      <div class="pair"><dt>시행일</dt><dd>2026년 9월 6일</dd></div>
+    </dl>
+
+    <div class="summary-box">
+      <span class="eyebrow">한눈에 보는 요약</span>
+      <p>글로리 바이블은 어떤 정보도 수집하지 않습니다. 계정도, 분석 도구도, 광고도, 네트워크 연결도 전혀 없습니다 &mdash; 모든 말씀과 설정은 오직 사용자의 기기 안에만 저장됩니다.</p>
+    </div>
+
+    <section class="clause">
+      <div class="clause-num">01</div>
+      <div>
+        <h2>수집하지 않는 정보</h2>
+        <p>글로리 바이블은 개인정보, 이용 정보, 기기 식별자 등 어떤 데이터도 수집·전송·공유하지 않습니다. 로그인 기능, 분석(애널리틱스) SDK, 광고 SDK가 전혀 없으며, 앱이 통신하는 서버 자체가 존재하지 않습니다 &mdash; 앱은 아예 네트워크에 접근하지 않습니다.</p>
+      </div>
+    </section>
+
+    <section class="clause">
+      <div class="clause-num">02</div>
+      <div>
+        <h2>기기에만 저장되는 정보</h2>
+        <p>사용하던 상태를 기억하기 위해, iOS/Android의 표준 앱 저장소를 이용해 아래 정보만 기기 안에 저장됩니다.</p>
+        <ul>
+          <li>마지막으로 읽은 책·장·절</li>
+          <li>선택한 언어 및 기본 번역본</li>
+          <li>테마, 글자 크기, 폰트 설정</li>
+          <li>북마크한 절</li>
+        </ul>
+        <p>이 정보는 기기 밖으로 전송되지 않으며, 개발자는 이 정보를 전혀 전달받지 않습니다.</p>
+      </div>
+    </section>
+
+    <section class="clause">
+      <div class="clause-num">03</div>
+      <div>
+        <h2>성경 본문 및 라이선스</h2>
+        <p>앱에 포함된 번역본은 퍼블릭 도메인이거나, "열린성경(Open Translation Bible)" 계열 10종의 경우 CC BY-SA 4.0 라이선스를 따릅니다. 각 번역본의 전체 출처 정보는 앱 내 설정 화면에서 확인할 수 있습니다. 이 콘텐츠를 통해 어떤 제3자도 사용자 데이터를 전달받지 않으며, 설치 시 함께 제공되어 완전히 오프라인으로 읽힙니다.</p>
+      </div>
+    </section>
+
+    <section class="clause">
+      <div class="clause-num">04</div>
+      <div>
+        <h2>아동의 개인정보</h2>
+        <p>이 앱은 그 누구로부터도 정보를 수집하지 않으므로, 아동을 포함한 모든 연령대가 안전하게 사용할 수 있습니다.</p>
+      </div>
+    </section>
+
+    <section class="clause">
+      <div class="clause-num">05</div>
+      <div>
+        <h2>정보 삭제</h2>
+        <p>모든 앱 데이터는 오직 사용자의 기기에만 존재합니다. 앱을 삭제하거나 기기 설정에서 앱 데이터를 지우면 즉시 영구적으로 삭제됩니다. 저희 쪽에는 애초에 아무 정보도 전달되지 않으므로, 별도로 삭제를 요청할 대상 자체가 없습니다.</p>
+      </div>
+    </section>
+
+    <section class="clause">
+      <div class="clause-num">06</div>
+      <div>
+        <h2>정책 변경</h2>
+        <p>본 방침이 변경되는 경우, 위 시행일이 갱신되고 새 버전이 같은 주소에 게시됩니다. 변경 이후에도 앱을 계속 사용하는 것은 변경된 내용에 동의하는 것으로 간주됩니다.</p>
+      </div>
+    </section>
+
+    <section class="clause">
+      <div class="clause-num">07</div>
+      <div>
+        <h2>문의</h2>
+        <p>본 방침에 대해 궁금한 점은 <a href="mailto:serenedevk@gmail.com">serenedevk@gmail.com</a>으로 연락해 주세요.</p>
+      </div>
+    </section>
+  </div>
+
+  <footer class="foot">
+    <span>Glory Bible &mdash; offline, ten-language parallel Bible reader</span>
+    <span>v1.0 &middot; 2026-09-06</span>
+  </footer>
+
+</div>
+
+<script>
+  (function () {
+    var enBtn = document.getElementById('btn-en');
+    var koBtn = document.getElementById('btn-ko');
+    var enBox = document.getElementById('lang-en');
+    var koBox = document.getElementById('lang-ko');
+
+    function setLang(lang) {
+      var isKo = lang === 'ko';
+      enBox.hidden = isKo;
+      koBox.hidden = !isKo;
+      enBtn.setAttribute('aria-pressed', String(!isKo));
+      koBtn.setAttribute('aria-pressed', String(isKo));
+      document.documentElement.setAttribute('lang', isKo ? 'ko' : 'en');
+      try { localStorage.setItem('gb-privacy-lang', lang); } catch (e) {}
+    }
+
+    enBtn.addEventListener('click', function () { setLang('en'); });
+    koBtn.addEventListener('click', function () { setLang('ko'); });
+
+    var saved = null;
+    try { saved = localStorage.getItem('gb-privacy-lang'); } catch (e) {}
+    if (saved === 'ko') setLang('ko');
+  })();
+</script>
+</body>
+</html>
