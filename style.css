@@ -577,8 +577,6 @@ transition: color 200ms ease;
 #contact{
     background-color: #2e2f33;
     background-image: radial-gradient(circle at center, rgba(255, 255, 255, 0.06), transparent 70%);
-    border-top: 3px dashed #55565c;
-    border-bottom: 3px dashed #55565c;
     padding-top:30px;
     padding-bottom:30px;
     text-align: center;
@@ -596,6 +594,15 @@ transition: color 200ms ease;
     font-weight: var(--weight-light);
 }
 
+.contact__email a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.contact__email a:hover{
+    text-decoration: underline;
+}
+
 .contact__icon{
     font-size: var(--font-medium);
     margin: 25px 20px 0px 20px;
@@ -608,6 +615,14 @@ transition: color 200ms ease;
 
 .contact__icon a{
     transition: ease-in 200ms;
+}
+
+.site-footer{
+    background-color: #2e2f33;
+    color: var(--color-gray);
+    text-align: center;
+    padding: 15px 0;
+    font-size: var(--font-small);
 }
 
 
